@@ -11,4 +11,9 @@ const celciusToFarenheit = num => (1.8 * num) + 32;
 
 let minimumCharCount = 7;
 const isValidLength = text => text.length > minimumCharCount;
-console.log(isValidLength("pooped the bed"));
+// console.log(isValidLength("pooped the bed"));
+
+
+//3. make problem #2 more flexible by passing in charCount to check for.
+const checkCharLength = (text, count) => text.length >= count;
+// console.log(checkCharLength("classic", minimumCharCount));
