@@ -17,3 +17,24 @@ const isValidLength = text => text.length > minimumCharCount;
 //3. make problem #2 more flexible by passing in charCount to check for.
 const checkCharLength = (text, count) => text.length >= count;
 // console.log(checkCharLength("classic", minimumCharCount));
+
+
+//4. Write a function that takes in a string and it will output the count of vowels in the string.
+
+const countTextVowels = text => {
+    let vowelCount = 0;
+    let arr = text.toLowerCase().split("");
+    arr.forEach(function (char) {
+        switch (char) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                vowelCount++;
+                break;
+        }
+    });
+    // console.log(`Number of vowels in text: ${vowelCount}`);
+};
+countTextVowels("YEAH");
