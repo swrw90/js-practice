@@ -37,4 +37,18 @@ const countTextVowels = text => {
     });
     // console.log(`Number of vowels in text: ${vowelCount}`);
 };
-countTextVowels("YEAH");
+//countTextVowels("YEAH");
+
+//5. Write a function that takes in an array of Integers and returns the sum of the integers
+
+let numbers = [58, 69, 22, 30];
+
+let findSum = (total, num) => {
+    return total + num;
+}
+
+let concat = (result, num) => {
+    return result + `${num}`;
+} 
+
+//console.log(numbers.reduce(findSum, 21));
