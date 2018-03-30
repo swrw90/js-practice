@@ -49,6 +49,34 @@ let findSum = (total, num) => {
 
 let concat = (result, num) => {
     return result + `${num}`;
-} 
+}
 
 //console.log(numbers.reduce(findSum, 21));
+
+
+//6.  Write a function that takes in an array of Strings then output one long text separated with space " "
+//    the each string must be atleast 5 characters long
+
+let arrString = ["Fuck", "Shit", "ginger", "Bulbasaur", "nipple", "butt"];
+
+// results should be "ginger Bulbasaur nipple"
+
+let checkStringLength = (arr) => {
+    var newArray = [];
+    arr.forEach(function (element, index) {
+        if (element.length >= 5) {
+            newArray.push(element);
+        }
+    });
+    return newArray.join(" ");
+}
+console.log(checkStringLength(arrString));
+
+something = {
+    "key": "value"
+}
+
+something = {
+    key: 90
+}
+
