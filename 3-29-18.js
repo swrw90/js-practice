@@ -61,22 +61,45 @@ let arrString = ["Fuck", "Shit", "ginger", "Bulbasaur", "nipple", "butt"];
 
 // results should be "ginger Bulbasaur nipple"
 
-let checkStringLength = (arr) => {
-    var newArray = [];
-    arr.forEach(function (element, index) {
-        if (element.length >= 5) {
-            newArray.push(element);
-        }
-    });
-    return newArray.join(" ");
-}
-console.log(checkStringLength(arrString));
+// let checkStringLength = (arr) => {
+//     var newArray = [];
+//     arr.forEach(function (element, index) {
+//         if (element.length >= 5) {
+//             newArray.push(element);
+//         }
+//     });
+//     return newArray.join(" ");
+// }
+// console.log(checkStringLength(arrString));
 
-something = {
-    "key": "value"
-}
+var newArray = arrString.filter(word => word.length > 5).join(" ");
 
-something = {
-    key: 90
-}
 
+
+
+// something = {
+//     "key": "value"
+// }
+
+// something = {
+//     key: 90
+// }
+
+
+//6. Write a function that takes in a string and returns the middle two characters as a string
+
+// let findMiddleTwoChar = (text) => {
+//     var stringMedian = (text.length / 2) - 1;
+//     var countOfCharToInclude = 2;
+//     console.log(text.substr(stringMedian, countOfCharToInclude));
+// }
+// findMiddleTwoChar("SuckDick");
+
+
+//7. // Given two strings, a and b, return the result of putting them together in the
+// order abba, e.g. 'Hi' and 'Bye' returns 'HiByeByeHi'.
+
+var makeAbba = function (text1, text2) {
+    return text1 + text2 + text2 + text1
+}
+console.log(makeAbba("shit", "fuck"));
