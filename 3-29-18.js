@@ -102,4 +102,19 @@ var newArray = arrString.filter(word => word.length > 5).join(" ");
 var makeAbba = function (text1, text2) {
     return text1 + text2 + text2 + text1
 }
-console.log(makeAbba("shit", "fuck"));
+// console.log(makeAbba("shit", "fuck"));
+
+
+//8.Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+var max = 20
+var min = 10
+var in1020 = (a, b) => (a >= min && a <= max) && (b >= min && b <= max);
+console.log(in1020(13, 13));
+
+
+//9. Given a string, return a virgin without both the first and last char of the
+// string. The string may be any length, including 0.
+
+var withoutEnd2=function(str) { 
+
+}
