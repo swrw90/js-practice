@@ -122,5 +122,12 @@ var withoutEnd2 = function (str) {
     let startIndex = 1;
     let string = str.slice(startIndex, str.length - 1);
 }
-console.log(withoutEnd2('God dammit'));
+// console.log(withoutEnd2('God dammit'));
 
+
+// **BONUS QUESTION**
+//11 Given a string, return true if the first instance of 'x' in the string is
+// immediately followed by another 'x'.
+
+var doubleX = str => str.includes("xx");
+console.log(doubleX('texxt'));
