@@ -28,12 +28,16 @@ let fucktorial = (number) => {
         return number * fucktorial(number - 1);
     }
 }
+// console.log(fucktorial(5));
 
-console.log(fucktorial(50));
+
+// let funtorial = int => {int < 0 ? -1 ? int == 0 : 1 : int * funtorial(int - 1)}
+
+
+// console.log(funtorial(5));
+
 
 // CallStack 
-//     - fucktorial(7) 5040 
-//         - fuctorial(6) 720
 //             - fucktorial(5) 120
 //                 - fucktorial(4) 24
 //                     - fucktorial(3) 6
