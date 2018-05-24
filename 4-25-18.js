@@ -7,13 +7,13 @@
 // For example: if str is "arrb6???4xxbl5???eee5" then your program should return true because there are exactly 3 
 // question marks between 6 and 4, and 3 question marks between 5 and 5 at the end of the string. 
 
-function QuestionsMarks(str) { 
+function QuestionsMarks(str) {
 
-  return str; 
-         
+  return str;
+
 }
 
-QuestionsMarks(readline());     
+// QuestionsMarks(readline());     
 
 
 // 2. Using the JavaScript language, have the function VowelSquare( ) take the strArr parameter being passed which will be a 2D matrix of some arbitrary size 
@@ -29,14 +29,14 @@ QuestionsMarks(readline());
 // so for this example your program should return 1-0. If no 2x2 square of vowels exists, then return the string not found . 
 // If there are multiple squares of vowels, return the one that is at the most top-left position in the whole matrix. The input matrix will at least be of size 2x2. 
 
-function VowelSquare(strArr) { 
+function VowelSquare(strArr) {
 
   // code goes here  
-  return strArr; 
-         
+  return strArr;
+
 }
-   
-VowelSquare(readline());                            
+
+// VowelSquare(readline());                            
 
 // 3. Using the JavaScript language, have the function ScaleBalancing( ) read strArr which will contain two elements, 
 // the first being the two positive integer weights on a balance scale (left and right sides) 
@@ -53,15 +53,20 @@ VowelSquare(readline());
 // If it is not possible to balance the scale then your program should return the string not possible . 
 
 
-function ScaleBalancing(strArr) { 
+function ScaleBalancing(strArr) {
 
   // code goes here  
-  return strArr; 
-         
+  return strArr;
+
 }
-   
-ScaleBalancing(readline());                            
+
+// ScaleBalancing(readline());                            
 
 
 
 
+//1. Write a function that converts F to C.
+// Function will return a value instead of output to console.
+
+let converFahrenheitToCelcius = num => (.5556 * num) - 32
+// console.log(converFahrenheitToCelcius(80));
